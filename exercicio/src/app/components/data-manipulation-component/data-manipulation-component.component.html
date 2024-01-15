@@ -1,0 +1,11 @@
+<ul *ngFor="let car of cars">
+  <li>{{car.model}}
+    <button class="details-button" (click)="toggleDetails(car)">{{car.showDetails ? 'Hide details' : 'View details'}}</button>
+    <button class="delete-button" (click)="deleteCar(car)">Delete</button>
+    <div *ngIf="car.showDetails">
+      <!-- Conteúdo dos detalhes do carro -->
+      Detalhes: {{ car.details }}
+    </div>
+  </li>
+</ul>
+
