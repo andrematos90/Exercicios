@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercicio';
+
+  show:boolean = false;
+
+  showEx(){
+    this.show = !this.show
+  }
 }
