@@ -1,0 +1,5 @@
+<h2>Itens:</h2>
+<ul *ngFor="let candidato of candidatos"
+ [ngClass]="{'ativo' : candidato.status, 'inativo' : !candidato.status}">
+  <li>{{candidato.nome}} <button (click)="changeStatus(candidato)">{{candidato.status ? 'Desativar ' :  'Ativar'}}</button></li>
+</ul>
