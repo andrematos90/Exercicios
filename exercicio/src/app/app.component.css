@@ -1,0 +1,12 @@
+.destaque:hover{
+  color:red;
+  cursor:pointer;
+}
+
+.normal-class{
+  color: black;
+}
+
+.special-class{
+  color: blue;
+}
