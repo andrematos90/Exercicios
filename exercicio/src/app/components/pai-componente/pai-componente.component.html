@@ -1,0 +1,12 @@
+<div class="container">
+  <button (click)="mostraFilho()">{{mostra ? 'ocultar filho': 'mostrar filho'}}</button>
+
+  <div class="mensagem">
+    <h1>Mensagem do Filho:</h1>
+  <span>{{mensagem}}</span>
+  </div>
+
+  <div *ngIf="mostra">
+    <app-filho-componente (enviaEvento)="recebeMensagem($event)"></app-filho-componente>
+  </div>
+</div>

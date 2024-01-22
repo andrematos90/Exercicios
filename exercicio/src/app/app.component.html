@@ -300,6 +300,11 @@
       visibility: hidden;
     }
   }
+
+  .container-componente h1{
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
 <!-- Toolbar -->
@@ -366,6 +371,11 @@
       </b>para capturar o evento no componente pai.
 
       Teste a aplicação para garantir que a mensagem seja corretamente transmitida do componente filho para o componente pai.</span>
+
+      <div class="container-componente">
+        <h1>Solução:</h1>
+        <app-pai-componente></app-pai-componente>
+      </div>
 
 
   </div>
